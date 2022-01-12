@@ -11,8 +11,8 @@ Function.prototype.applys = function() {
 }
 
 function test(...args) {
-    console.log(this)
-    console.log(args)
+    console.log(this);
+    console.log(args);
 }
 
 const obj = {
