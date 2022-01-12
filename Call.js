@@ -23,7 +23,7 @@ test.call("1")
 test.call("1",2,3)
 test.call(obj,1,2,3)
 
-console.log("========");
+console.log("========")
 
 test.calls()
 test.calls("1")
