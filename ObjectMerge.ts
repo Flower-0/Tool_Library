@@ -1,29 +1,31 @@
-const a1 = {
-    a:[{name:"彦祖"},{name:"冠希"}],
+const a = {
+    a:[{name:"u"},{name:"t"}],
     b:2,
-    c:3,
+    c:0,
     d:5
 }
 
-const b2 = {
-    a:8,
-    e:90,
-    s:67,
-    b:{ghs:89}
+const b = {
+    a:undefined,
+    e:null,
+    s:"",
+    b:{e:89}
 }
 
-function megan(...arr) {
-    const res = {}
+function ObjectMerge(...arr:object[]): object{
+    const result = {}
     arr.forEach(item => {
         Object.keys(item).forEach(key => {
-            if (res.hasOwnProperty(key)) {
-                res[key] = [].concat(res[key],item[key])
+            if (result.hasOwnProperty(key)) {
+                // @ts-ignore
+                result[key] = [].concat(result[key],item[key])
             } else {
-                res[key] = item[key]
+                // @ts-ignore
+                result[key] = item[key]
             }
         })
-    });
-    return res
+    })
+    return result
 }
 
-console.log(megan(a1,b2));
+console.log(ObjectMerge(a,b));
