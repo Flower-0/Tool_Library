@@ -4,6 +4,3 @@ function reverseString(str: string): never | string {
     while (--length >= 0) result += str[length]
     return result
 }
-
-console.log(reverseString("acktrwetrwe"));
-
