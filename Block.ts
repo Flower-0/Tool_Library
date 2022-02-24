@@ -1,4 +1,4 @@
-function Block(params: any[], target?: number): any[] {
+function block(params: any[], target?: number): any[] {
     if (!target) target = 1;
     const sum = [];
     let newArr = [], last = 0;
@@ -21,6 +21,6 @@ function Block(params: any[], target?: number): any[] {
 }
 
 
-console.log(Block([1, 2, 3, 4, 5, 6, 7], 3)) // [[1,2,3], [4,5,6],[7]]`
-console.log(Block([1, 2, 3, 4, 5, 6, 7]))// [[1],[2],[3],[4],[5],[6],[7]]
-console.log(Block([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]
+console.log(block([1, 2, 3, 4, 5, 6, 7], 3)) // [[1,2,3], [4,5,6],[7]]`
+console.log(block([1, 2, 3, 4, 5, 6, 7]))// [[1],[2],[3],[4],[5],[6],[7]]
+console.log(block([1, 2, 3, 4, 5, 6, 7], 8))// [[1, 2, 3, 4, 5, 6, 7]]

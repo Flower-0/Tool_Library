@@ -12,7 +12,7 @@ const b = {
     b:{e:89}
 }
 
-function ObjectMerge(...arr:object[]): object{
+function objectMerge(...arr:object[]): object{
     const result = {}
     arr.forEach(item => {
         Object.keys(item).forEach(key => {
@@ -28,4 +28,4 @@ function ObjectMerge(...arr:object[]): object{
     return result
 }
 
-console.log(ObjectMerge(a,b));
+console.log(objectMerge(a,b));
