@@ -1,4 +1,4 @@
-export function Mean(params: any): number | never {
+export function mean(params: any): number | never {
     if (!Array.isArray(params) || !params.length) throw new TypeError("Please enter an array!")
     let result = 0
     params.forEach((item) => {
